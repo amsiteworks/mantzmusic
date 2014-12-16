@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* This file contains the main stylings for mantzmusic.com */
+
+/****************Layout****************/
+body {
+	background: url(oceanwayapicolorized.jpg)#000000 no-repeat fixed;
+}
+#container {
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto 0 auto;
+	background-color: rgba(234,234,234,0.95);
+}
+#main_left {
+	padding: 0 20px 0 20px;
+	float: left;
+	width: 60%;
+}
+#sidebar_right {
+	width: 25%;
+	float: right;
+	padding: 0 20px 0 20px;
+	margin-top: 20px;
+	margin-right: 20px;
+	background-color: rgba(242,234,203,0.75)
+}
+#footer {
+	background-color: black;
+	color: white;
+	font-size: .9em;
+	padding: 20px;
+	text-align: center;
+	clear: both;
+}
+
+.imgcaption {
+	font-size: .8em;
+}
