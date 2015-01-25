@@ -1,7 +1,7 @@
 @charset "UTF-8";
-/* This file contains the main stylings for mantzmusic.com */
+/* This file contains the stylings for mantzmusic.com */
 
-/****************Layout****************/
+/********** Main Styles **********/
 body {
 	background: url(oceanwayapicolorized.jpg)#000000 no-repeat fixed;
 }
@@ -11,17 +11,22 @@ body {
 	margin: 0 auto 0 auto;
 	background-color: rgba(234,234,234,0.95);
 }
+#header {
+	height: 288px;
+}
 #main_left {
-	padding: 0 20px 0 20px;
+	padding: 0 0 0 20px;
 	float: left;
 	width: 60%;
+}
+#main_left p {
+	margin-right: -40px;
 }
 #sidebar_right {
 	width: 25%;
 	float: right;
 	padding: 0 20px 0 20px;
 	margin-top: 20px;
-	margin-right: 20px;
 	background-color: rgba(242,234,203,0.75)
 }
 #footer {
@@ -32,7 +37,32 @@ body {
 	text-align: center;
 	clear: both;
 }
-
+.clr {
+	clear: both;
+}
+/********** Image Styles **********/
+.imgleft {
+	float: left;
+	margin: 0 12px 0 0;
+}
 .imgcaption {
 	font-size: .8em;
+	margin: -6px 0 0 0;
+}
+
+/********** Quote Form *********/
+#onLocationType {
+	display: none;
+}
+#olMics {
+	display: none;
+}
+#studioRecording {
+	display: none;
+}
+#mixing {
+	display: none;
+}
+#mastering {
+	display: none;
 }

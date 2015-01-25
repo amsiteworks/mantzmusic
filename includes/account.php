@@ -1,8 +1,3 @@
-<?php #mantzmusic.com - header file
- 	//include('./stuff/config.php');
-	ob_start();
-	session_start();
-?>
 <!doctype html>
 <html>
 <head>
@@ -43,28 +38,13 @@
                     </ul>
                 </li>
                 <li><a href="./projects.php" title="Projects">Projects</a></li>
-                <li><a href="./account.php" title="Account">Account</a>
+                <li><a href="#" title="Account">Account</a>
                 	<ul>
-                    	<?php //toggles navigation depending if user is logged in or out
-                    	if(isset($_SESSION['user_id'])) {
-							echo '<li><a href="./account.php" title="Account">My Account</a></li>
-							<li class="last"><a href="./logout title="Logout">Log Out</a></li>';
-						}
-						else {
-							echo '<li><a href="./registration.php" title="Registration">Register</a></li>
-							<li class="last"><a href="./login.php" title="Login">Login</a></li>';
-						}
-                   		?>
-					</ul>
+                    	<li><a href="#" title="Login">Login</a></li>
+                        <li class="last"><a href="./registration.php" title="Registration">Registration</a></li>
+                   	</ul>
                	</li>
-                <li><a href="./contact.php" title="Contact">Contact</a></li>
-                <?php //make link to admin section available if admin has logged in
-					if(isset($_SESSION['user_id']) && ($_SESSION['user_level'] == 1)){
-						echo '<li><a href="./adash.php" title="Admin Only">Admin Dashboard</a></li>';
-					}
-					else echo '';
-				?>
-                <li><a href="./quoteform.php" title="Quote">Quote</a></li>
+                <li><a href="#" title="Contact">Contact</a></li>
             </ul>
         </nav>
 		<script>
