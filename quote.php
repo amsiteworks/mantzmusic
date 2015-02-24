@@ -91,9 +91,36 @@
 		$ms += calcMs();
 	}
 	$quo = $ol + $sr + $ms + $mx;
+	
 	// Page Output
 	$quote = '<h2>Here is your instant quote:</h2>';
 	$quote .= '<h1>$'.$quo.'</h1>';
 	echo $quote;
+	if ($ol != 0){
+		echo '1';
+	}
+	else if ($sr != 0 && $mx != 0 && $ms != 0){
+		echo '2';
+	}
+	else if ($sr != 0 && $mx != 0){
+		echo '3';
+	}
+	else if ($sr != 0 && $ms != 0){
+		echo '4';
+	}	
+	else if ($mx != 0 && $ms != 0){
+		echo '5';
+	}
+	else if ($sr != 0){
+		echo '6';
+	}
+	else if ($mx != 0){
+		echo '7';
+	}
+	else if ($ms != 0){
+		echo '8';
+	}
+	else echo 'Houston we have a problem';
+	
 	include ('./includes/footer.php');
 ?>
